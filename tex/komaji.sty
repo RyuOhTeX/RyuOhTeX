@@ -47,9 +47,15 @@
 \def\FU{步} \def\Fu{\rev{步}}
 \def\RY{龍} \def\Ry{\rev{龍}}
 \def\UM{馬} \def\Um{\rev{馬}}
-\def\NG{全} \def\Ng{\rev{全}}
-\def\NK{圭} \def\Nk{\rev{圭}}
-\def\NY{杏} \def\Ny{\rev{杏}}
+\def\NK{\hbox{\lower-1.0ex\hbox{\scalebox{1.0}[0.5]{成}}\kern-1.85em\lower0.3ex\hbox{\ \ \scalebox{1.0}[0.5]{桂}}}}
+\def\Nk{\rev{\NK}}
+\def\NG{\hbox{\lower-1.0ex\hbox{\scalebox{1.0}[0.5]{成}}\kern-1.85em\lower0.3ex\hbox{\ \ \scalebox{1.0}[0.5]{銀}}}}
+\def\Ng{\rev{\NG}}
+\def\NY{\hbox{\lower-1.0ex\hbox{\scalebox{1.0}[0.5]{成}}\kern-1.85em\lower0.3ex\hbox{\ \ \scalebox{1.0}[0.5]{香}}}}
+\def\Ny{\rev{\NY}}
+% \def\NG{全} \def\Ng{\rev{全}}
+% \def\NK{圭} \def\Nk{\rev{圭}}
+%\def\NY{\rev{杏}}
 \def\TO{と} \def\To{\rev{と}}
 }
 \monjika
@@ -123,7 +129,8 @@
 \let\Nk\GNk
 \let\Ng\GNg
 \let\Ry\GRy
-\let\Um\GUm}
+\let\Um\GUm
+}
 
 
 %% Kifu notations

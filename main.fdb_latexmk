@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1674563199 "/home/quisette/repos/playground/main.tex" "main.pdf" "main" 1674563201
+["pdflatex"] 1674584698 "/home/quisette/repos/RyuOhTeX/main.tex" "main.pdf" "main" 1674584699
   "/etc/texmf/web2c/texmf.cnf" 1642800030 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/quisette/repos/playground/main.tex" 1674563198 4426 785c2bc6967a409f29622fcf9696ac3a ""
+  "/home/quisette/repos/RyuOhTeX/main.tex" 1674579683 4555 0d64db0ff52fe393aa2d90cd7d5022bb ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u26.enc" 1526247674 2323 7b5b75cdf8d2a56bc523542b80a21a50 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u30.enc" 1526247674 2323 808a4954230d4b9aaf0f3e890ff4e23e ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u4e.enc" 1526247674 2323 26f2d50cfa8daef1570dbca4a5790f0b ""
@@ -366,15 +366,16 @@
   "Portella_2moji/OU.png" 1674490549 23311 4cbcf20e64cdf34c98abeed56f34dc52 ""
   "Portella_2moji/RY.png" 1674490549 21681 926882adcb1bbacdec67ed90d1a896d8 ""
   "RyuOhTeX.sty" 1674563194 25 30d722799127687d3b1bb1adec8958e6 ""
-  "main.aux" 1674563200 8047 5f21f8d3c8f9c84aed93714af80d5dca "pdflatex"
-  "main.out" 1674563200 780 c8f5719295f2707836a7032020d69dd1 "pdflatex"
-  "main.tex" 1674563198 4426 785c2bc6967a409f29622fcf9696ac3a ""
-  "main.toc" 1674563200 587 743e514d18e9b76ee0e478eb24c3a112 "pdflatex"
-  "tex/RyuOhTeX.sty" 1674563111 2634 227f24824e7b0f7f6400d1a197d56fa7 ""
+  "main.aux" 1674584699 8285 9075d648459a20f3662fa9c0e1cee702 "pdflatex"
+  "main.out" 1674584699 780 c8f5719295f2707836a7032020d69dd1 "pdflatex"
+  "main.tex" 1674579683 4555 0d64db0ff52fe393aa2d90cd7d5022bb ""
+  "main.toc" 1674584699 587 743e514d18e9b76ee0e478eb24c3a112 "pdflatex"
+  "shogiban.tex" 1674579400 229 6f43f8e1defe5ab427705d4db6758235 ""
+  "tex/RyuOhTeX.sty" 1674584698 2634 227f24824e7b0f7f6400d1a197d56fa7 ""
   "tex/bannmenn.sty" 1674546222 7402 05d37d0a8e1fa333e019fdd092f3bb5f ""
   "tex/fonts.sty" 1674538261 2104 1e6a98773402786552a2bafe7eaef91f ""
   "tex/kifu.sty" 1674546461 1111 3d4b4fda4991553d9818c9e7e0fc0346 ""
-  "tex/komaji.sty" 1674542297 5493 30da934ae93e81051473120f78f1e668 ""
+  "tex/komaji.sty" 1674579603 5897 bfd73f0cec051dbd16edcf23657176e3 ""
   (generated)
   "main.aux"
   "main.log"

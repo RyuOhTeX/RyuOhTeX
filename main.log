@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.1.23)  24 JAN 2023 20:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.1.23)  25 JAN 2023 02:24
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/quisette/repos/playground/main.tex
-(/home/quisette/repos/playground/main.tex
+**/home/quisette/repos/RyuOhTeX/main.tex
+(/home/quisette/repos/RyuOhTeX/main.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-07-15> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -727,311 +727,471 @@ LaTeX Font Info:    Font shape `C70/gt/m/n' will be
 LaTeX Font Info:    Font shape `C70/mc/bx/n'
 (Font)              in size <12> not available.
 (Font)              Font shape `C70/gt/m/n'
-(Font)              tried instead on input line 54.
+(Font)              tried instead on input line 55.
 LaTeX Font Info:    Font shape `C70/gt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 54.
+(Font)              scaled to size 12.0pt on input line 55.
 LaTeX Font Info:    Font shape `C70/mc/m/n' will be
-(Font)              scaled to size 8.0pt on input line 61.
+(Font)              scaled to size 8.0pt on input line 62.
 LaTeX Font Info:    Font shape `C70/mc/m/n' will be
-(Font)              scaled to size 9.0pt on input line 61.
+(Font)              scaled to size 9.0pt on input line 62.
 LaTeX Font Info:    Font shape `C70/mc/m/n' will be
-(Font)              scaled to size 12.0pt on input line 67.
+(Font)              scaled to size 12.0pt on input line 68.
 <Portella_2moji/KY.png, id=128, 249.93375pt x 256.96pt>
 File: Portella_2moji/KY.png Graphic file (type png)
 <use Portella_2moji/KY.png>
-Package pdftex.def Info: Portella_2moji/KY.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/KY.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 <Portella_2moji/GY.png, id=129, 249.93375pt x 256.96pt>
 File: Portella_2moji/GY.png Graphic file (type png)
 <use Portella_2moji/GY.png>
-Package pdftex.def Info: Portella_2moji/GY.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/GY.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 <Portella_2moji/FU.png, id=130, 249.93375pt x 256.96pt>
 File: Portella_2moji/FU.png Graphic file (type png)
 <use Portella_2moji/FU.png>
-Package pdftex.def Info: Portella_2moji/FU.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella_2moji/FU.png Graphic file (type png)
 <use Portella_2moji/FU.png>
-Package pdftex.def Info: Portella_2moji/FU.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella_2moji/KY.png Graphic file (type png)
 <use Portella_2moji/KY.png>
-Package pdftex.def Info: Portella_2moji/KY.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/KY.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella_2moji/FU.png Graphic file (type png)
 <use Portella_2moji/FU.png>
-Package pdftex.def Info: Portella_2moji/FU.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 <Portella_2moji/KI.png, id=131, 249.93375pt x 256.96pt>
 File: Portella_2moji/KI.png Graphic file (type png)
 <use Portella_2moji/KI.png>
-Package pdftex.def Info: Portella_2moji/KI.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/KI.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 <Portella_2moji/NG.png, id=132, 249.93375pt x 256.96pt>
 File: Portella_2moji/NG.png Graphic file (type png)
 <use Portella_2moji/NG.png>
-Package pdftex.def Info: Portella_2moji/NG.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/NG.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella_2moji/FU.png Graphic file (type png)
 <use Portella_2moji/FU.png>
-Package pdftex.def Info: Portella_2moji/FU.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 <Portella_2moji/KE.png, id=133, 249.93375pt x 256.96pt>
 File: Portella_2moji/KE.png Graphic file (type png)
 <use Portella_2moji/KE.png>
-Package pdftex.def Info: Portella_2moji/KE.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/KE.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella_2moji/KI.png Graphic file (type png)
 <use Portella_2moji/KI.png>
-Package pdftex.def Info: Portella_2moji/KI.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/KI.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella_2moji/FU.png Graphic file (type png)
 <use Portella_2moji/FU.png>
-Package pdftex.def Info: Portella_2moji/FU.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella_2moji/FU.png Graphic file (type png)
 <use Portella_2moji/FU.png>
-Package pdftex.def Info: Portella_2moji/FU.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 <Portella_2moji/RY.png, id=134, 249.93375pt x 256.96pt>
 File: Portella_2moji/RY.png Graphic file (type png)
 <use Portella_2moji/RY.png>
-Package pdftex.def Info: Portella_2moji/RY.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/RY.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 <Portella_2moji/HI.png, id=135, 249.93375pt x 256.96pt>
 File: Portella_2moji/HI.png Graphic file (type png)
 <use Portella_2moji/HI.png>
-Package pdftex.def Info: Portella_2moji/HI.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/HI.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella_2moji/KI.png Graphic file (type png)
 <use Portella_2moji/KI.png>
-Package pdftex.def Info: Portella_2moji/KI.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/KI.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella_2moji/FU.png Graphic file (type png)
 <use Portella_2moji/FU.png>
-Package pdftex.def Info: Portella_2moji/FU.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella_2moji/FU.png Graphic file (type png)
 <use Portella_2moji/FU.png>
-Package pdftex.def Info: Portella_2moji/FU.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 <Portella_2moji/GI.png, id=136, 249.93375pt x 256.96pt>
 File: Portella_2moji/GI.png Graphic file (type png)
 <use Portella_2moji/GI.png>
-Package pdftex.def Info: Portella_2moji/GI.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/GI.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 <Portella_2moji/OU.png, id=137, 249.93375pt x 256.96pt>
 File: Portella_2moji/OU.png Graphic file (type png)
 <use Portella_2moji/OU.png>
-Package pdftex.def Info: Portella_2moji/OU.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/OU.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella_2moji/KE.png Graphic file (type png)
 <use Portella_2moji/KE.png>
-Package pdftex.def Info: Portella_2moji/KE.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/KE.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella_2moji/FU.png Graphic file (type png)
 <use Portella_2moji/FU.png>
-Package pdftex.def Info: Portella_2moji/FU.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella_2moji/FU.png Graphic file (type png)
 <use Portella_2moji/FU.png>
-Package pdftex.def Info: Portella_2moji/FU.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella_2moji/KE.png Graphic file (type png)
 <use Portella_2moji/KE.png>
-Package pdftex.def Info: Portella_2moji/KE.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/KE.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella_2moji/KY.png Graphic file (type png)
 <use Portella_2moji/KY.png>
-Package pdftex.def Info: Portella_2moji/KY.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/KY.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella_2moji/FU.png Graphic file (type png)
 <use Portella_2moji/FU.png>
-Package pdftex.def Info: Portella_2moji/FU.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella_2moji/FU.png Graphic file (type png)
 <use Portella_2moji/FU.png>
-Package pdftex.def Info: Portella_2moji/FU.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella_2moji/KY.png Graphic file (type png)
 <use Portella_2moji/KY.png>
-Package pdftex.def Info: Portella_2moji/KY.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/KY.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 <Portella_2moji/KA.png, id=138, 249.93375pt x 256.96pt>
 File: Portella_2moji/KA.png Graphic file (type png)
 <use Portella_2moji/KA.png>
-Package pdftex.def Info: Portella_2moji/KA.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/KA.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella_2moji/KI.png Graphic file (type png)
 <use Portella_2moji/KI.png>
-Package pdftex.def Info: Portella_2moji/KI.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/KI.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella_2moji/GI.png Graphic file (type png)
 <use Portella_2moji/GI.png>
-Package pdftex.def Info: Portella_2moji/GI.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/GI.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella_2moji/KE.png Graphic file (type png)
 <use Portella_2moji/KE.png>
-Package pdftex.def Info: Portella_2moji/KE.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/KE.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella_2moji/FU.png Graphic file (type png)
 <use Portella_2moji/FU.png>
-Package pdftex.def Info: Portella_2moji/FU.png  used on input line 94.
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 95.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 <Portella/KY.png, id=139, 249.93375pt x 256.96pt>
 File: Portella/KY.png Graphic file (type png)
 <use Portella/KY.png>
-Package pdftex.def Info: Portella/KY.png  used on input line 110.
+Package pdftex.def Info: Portella/KY.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 <Portella/GY.png, id=140, 249.93375pt x 256.96pt>
 File: Portella/GY.png Graphic file (type png)
 <use Portella/GY.png>
-Package pdftex.def Info: Portella/GY.png  used on input line 110.
+Package pdftex.def Info: Portella/GY.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 <Portella/FU.png, id=141, 249.93375pt x 256.96pt>
 File: Portella/FU.png Graphic file (type png)
 <use Portella/FU.png>
-Package pdftex.def Info: Portella/FU.png  used on input line 110.
+Package pdftex.def Info: Portella/FU.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella/FU.png Graphic file (type png)
 <use Portella/FU.png>
-Package pdftex.def Info: Portella/FU.png  used on input line 110.
+Package pdftex.def Info: Portella/FU.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella/KY.png Graphic file (type png)
 <use Portella/KY.png>
-Package pdftex.def Info: Portella/KY.png  used on input line 110.
+Package pdftex.def Info: Portella/KY.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella/FU.png Graphic file (type png)
 <use Portella/FU.png>
-Package pdftex.def Info: Portella/FU.png  used on input line 110.
+Package pdftex.def Info: Portella/FU.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 <Portella/KI.png, id=142, 249.93375pt x 256.96pt>
 File: Portella/KI.png Graphic file (type png)
 <use Portella/KI.png>
-Package pdftex.def Info: Portella/KI.png  used on input line 110.
+Package pdftex.def Info: Portella/KI.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 <Portella/NG.png, id=143, 249.93375pt x 256.96pt>
 File: Portella/NG.png Graphic file (type png)
 <use Portella/NG.png>
-Package pdftex.def Info: Portella/NG.png  used on input line 110.
+Package pdftex.def Info: Portella/NG.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella/FU.png Graphic file (type png)
 <use Portella/FU.png>
-Package pdftex.def Info: Portella/FU.png  used on input line 110.
+Package pdftex.def Info: Portella/FU.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 <Portella/KE.png, id=144, 249.93375pt x 256.96pt>
 File: Portella/KE.png Graphic file (type png)
 <use Portella/KE.png>
-Package pdftex.def Info: Portella/KE.png  used on input line 110.
+Package pdftex.def Info: Portella/KE.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella/KI.png Graphic file (type png)
 <use Portella/KI.png>
-Package pdftex.def Info: Portella/KI.png  used on input line 110.
+Package pdftex.def Info: Portella/KI.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella/FU.png Graphic file (type png)
 <use Portella/FU.png>
-Package pdftex.def Info: Portella/FU.png  used on input line 110.
+Package pdftex.def Info: Portella/FU.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella/FU.png Graphic file (type png)
 <use Portella/FU.png>
-Package pdftex.def Info: Portella/FU.png  used on input line 110.
+Package pdftex.def Info: Portella/FU.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 <Portella/RY.png, id=145, 249.93375pt x 256.96pt>
 File: Portella/RY.png Graphic file (type png)
 <use Portella/RY.png>
-Package pdftex.def Info: Portella/RY.png  used on input line 110.
+Package pdftex.def Info: Portella/RY.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 <Portella/HI.png, id=146, 249.93375pt x 256.96pt>
 File: Portella/HI.png Graphic file (type png)
 <use Portella/HI.png>
-Package pdftex.def Info: Portella/HI.png  used on input line 110.
+Package pdftex.def Info: Portella/HI.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella/KI.png Graphic file (type png)
 <use Portella/KI.png>
-Package pdftex.def Info: Portella/KI.png  used on input line 110.
+Package pdftex.def Info: Portella/KI.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella/FU.png Graphic file (type png)
 <use Portella/FU.png>
-Package pdftex.def Info: Portella/FU.png  used on input line 110.
+Package pdftex.def Info: Portella/FU.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella/FU.png Graphic file (type png)
 <use Portella/FU.png>
-Package pdftex.def Info: Portella/FU.png  used on input line 110.
+Package pdftex.def Info: Portella/FU.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 <Portella/GI.png, id=147, 249.93375pt x 256.96pt>
 File: Portella/GI.png Graphic file (type png)
 <use Portella/GI.png>
-Package pdftex.def Info: Portella/GI.png  used on input line 110.
+Package pdftex.def Info: Portella/GI.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 <Portella/OU.png, id=148, 249.93375pt x 256.96pt>
 File: Portella/OU.png Graphic file (type png)
 <use Portella/OU.png>
-Package pdftex.def Info: Portella/OU.png  used on input line 110.
+Package pdftex.def Info: Portella/OU.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella/KE.png Graphic file (type png)
 <use Portella/KE.png>
-Package pdftex.def Info: Portella/KE.png  used on input line 110.
+Package pdftex.def Info: Portella/KE.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella/FU.png Graphic file (type png)
 <use Portella/FU.png>
-Package pdftex.def Info: Portella/FU.png  used on input line 110.
+Package pdftex.def Info: Portella/FU.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella/FU.png Graphic file (type png)
 <use Portella/FU.png>
-Package pdftex.def Info: Portella/FU.png  used on input line 110.
+Package pdftex.def Info: Portella/FU.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella/KE.png Graphic file (type png)
 <use Portella/KE.png>
-Package pdftex.def Info: Portella/KE.png  used on input line 110.
+Package pdftex.def Info: Portella/KE.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella/KY.png Graphic file (type png)
 <use Portella/KY.png>
-Package pdftex.def Info: Portella/KY.png  used on input line 110.
+Package pdftex.def Info: Portella/KY.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella/FU.png Graphic file (type png)
 <use Portella/FU.png>
-Package pdftex.def Info: Portella/FU.png  used on input line 110.
+Package pdftex.def Info: Portella/FU.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella/FU.png Graphic file (type png)
 <use Portella/FU.png>
-Package pdftex.def Info: Portella/FU.png  used on input line 110.
+Package pdftex.def Info: Portella/FU.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella/KY.png Graphic file (type png)
 <use Portella/KY.png>
-Package pdftex.def Info: Portella/KY.png  used on input line 110.
+Package pdftex.def Info: Portella/KY.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 <Portella/KA.png, id=149, 249.93375pt x 256.96pt>
 File: Portella/KA.png Graphic file (type png)
 <use Portella/KA.png>
-Package pdftex.def Info: Portella/KA.png  used on input line 110.
+Package pdftex.def Info: Portella/KA.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella/KI.png Graphic file (type png)
 <use Portella/KI.png>
-Package pdftex.def Info: Portella/KI.png  used on input line 110.
+Package pdftex.def Info: Portella/KI.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella/GI.png Graphic file (type png)
 <use Portella/GI.png>
-Package pdftex.def Info: Portella/GI.png  used on input line 110.
+Package pdftex.def Info: Portella/GI.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella/KE.png Graphic file (type png)
 <use Portella/KE.png>
-Package pdftex.def Info: Portella/KE.png  used on input line 110.
+Package pdftex.def Info: Portella/KE.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 File: Portella/FU.png Graphic file (type png)
 <use Portella/FU.png>
-Package pdftex.def Info: Portella/FU.png  used on input line 110.
+Package pdftex.def Info: Portella/FU.png  used on input line 111.
 (pdftex.def)             Requested size: 12.0pt x 12.33511pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [2] [3 <./Portella_2moji/KY.png> <./Portella_2moji/GY.png> <./Portella_2moji/FU.png> <./Portella_2moji/KI.png> <./Portella_2moji/NG.png> <./Portella_2moji/KE.png> <./Portella_2moji/RY.png> <./Portella_2moji/HI.png> <./Portella_2moji/GI.png> <./Portella_2moji/OU.png> <./Portella_2moji/KA.png> <./Portella/KY.png> <./Portella/GY.png> <./Portella/FU.png> <./Portella/KI.png> <./Portella/NG.png> <./Portella/KE.png> <./Portella/RY.png> <./Portella/HI.png> <./Portella/GI.png> <./Portella/OU.png> <./Portella/KA.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 161--162
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
-[4] (./main.aux)
+File: Portella_2moji/KY.png Graphic file (type png)
+<use Portella_2moji/KY.png>
+Package pdftex.def Info: Portella_2moji/KY.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/KE.png Graphic file (type png)
+<use Portella_2moji/KE.png>
+Package pdftex.def Info: Portella_2moji/KE.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/GI.png Graphic file (type png)
+<use Portella_2moji/GI.png>
+Package pdftex.def Info: Portella_2moji/GI.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/KI.png Graphic file (type png)
+<use Portella_2moji/KI.png>
+Package pdftex.def Info: Portella_2moji/KI.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/OU.png Graphic file (type png)
+<use Portella_2moji/OU.png>
+Package pdftex.def Info: Portella_2moji/OU.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/KI.png Graphic file (type png)
+<use Portella_2moji/KI.png>
+Package pdftex.def Info: Portella_2moji/KI.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/GI.png Graphic file (type png)
+<use Portella_2moji/GI.png>
+Package pdftex.def Info: Portella_2moji/GI.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/KE.png Graphic file (type png)
+<use Portella_2moji/KE.png>
+Package pdftex.def Info: Portella_2moji/KE.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/KY.png Graphic file (type png)
+<use Portella_2moji/KY.png>
+Package pdftex.def Info: Portella_2moji/KY.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/KA.png Graphic file (type png)
+<use Portella_2moji/KA.png>
+Package pdftex.def Info: Portella_2moji/KA.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/HI.png Graphic file (type png)
+<use Portella_2moji/HI.png>
+Package pdftex.def Info: Portella_2moji/HI.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/FU.png Graphic file (type png)
+<use Portella_2moji/FU.png>
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/FU.png Graphic file (type png)
+<use Portella_2moji/FU.png>
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/FU.png Graphic file (type png)
+<use Portella_2moji/FU.png>
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/FU.png Graphic file (type png)
+<use Portella_2moji/FU.png>
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/FU.png Graphic file (type png)
+<use Portella_2moji/FU.png>
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/FU.png Graphic file (type png)
+<use Portella_2moji/FU.png>
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/FU.png Graphic file (type png)
+<use Portella_2moji/FU.png>
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/FU.png Graphic file (type png)
+<use Portella_2moji/FU.png>
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/FU.png Graphic file (type png)
+<use Portella_2moji/FU.png>
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/KY.png Graphic file (type png)
+<use Portella_2moji/KY.png>
+Package pdftex.def Info: Portella_2moji/KY.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/KE.png Graphic file (type png)
+<use Portella_2moji/KE.png>
+Package pdftex.def Info: Portella_2moji/KE.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/GI.png Graphic file (type png)
+<use Portella_2moji/GI.png>
+Package pdftex.def Info: Portella_2moji/GI.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/KI.png Graphic file (type png)
+<use Portella_2moji/KI.png>
+Package pdftex.def Info: Portella_2moji/KI.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/GY.png Graphic file (type png)
+<use Portella_2moji/GY.png>
+Package pdftex.def Info: Portella_2moji/GY.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/KI.png Graphic file (type png)
+<use Portella_2moji/KI.png>
+Package pdftex.def Info: Portella_2moji/KI.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/GI.png Graphic file (type png)
+<use Portella_2moji/GI.png>
+Package pdftex.def Info: Portella_2moji/GI.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/KE.png Graphic file (type png)
+<use Portella_2moji/KE.png>
+Package pdftex.def Info: Portella_2moji/KE.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/KY.png Graphic file (type png)
+<use Portella_2moji/KY.png>
+Package pdftex.def Info: Portella_2moji/KY.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/HI.png Graphic file (type png)
+<use Portella_2moji/HI.png>
+Package pdftex.def Info: Portella_2moji/HI.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/KA.png Graphic file (type png)
+<use Portella_2moji/KA.png>
+Package pdftex.def Info: Portella_2moji/KA.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/FU.png Graphic file (type png)
+<use Portella_2moji/FU.png>
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/FU.png Graphic file (type png)
+<use Portella_2moji/FU.png>
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/FU.png Graphic file (type png)
+<use Portella_2moji/FU.png>
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/FU.png Graphic file (type png)
+<use Portella_2moji/FU.png>
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/FU.png Graphic file (type png)
+<use Portella_2moji/FU.png>
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/FU.png Graphic file (type png)
+<use Portella_2moji/FU.png>
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/FU.png Graphic file (type png)
+<use Portella_2moji/FU.png>
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/FU.png Graphic file (type png)
+<use Portella_2moji/FU.png>
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+File: Portella_2moji/FU.png Graphic file (type png)
+<use Portella_2moji/FU.png>
+Package pdftex.def Info: Portella_2moji/FU.png  used on input line 180.
+(pdftex.def)             Requested size: 12.0pt x 12.33511pt.
+(./shogiban.tex) [4] (./main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1039,18 +1199,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C8F5719295F2707836A7032020D69DD1;780.
  ) 
 Here is how much of TeX's memory you used:
- 24478 strings out of 478023
- 436613 string characters out of 5841208
- 761931 words of memory out of 5000000
- 42284 multiletter control sequences out of 15000+600000
- 503507 words of font info for 157 fonts, out of 8000000 for 9000
+ 24486 strings out of 478023
+ 436718 string characters out of 5841208
+ 761284 words of memory out of 5000000
+ 42287 multiletter control sequences out of 15000+600000
+ 503777 words of font info for 158 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 100i,13n,104p,5452b,1096s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 100i,13n,104p,5450b,1096s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u54.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u6f.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u7f.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u70.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u7b.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u96.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u90.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-uff.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u5c.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u57.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u6a.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u5e.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u67.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u72.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u61.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u6c.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u5f.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u52.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u98.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u73.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u91.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u92.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u99.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u63.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u26.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u56.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u7a.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u89.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u66.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u30.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u62.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u51.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u8f.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u53.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u50.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u75.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u6b.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u65.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u5b.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u82.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u4e.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u8b.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u68.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u8a.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u97.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u76.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u59.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u4f.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u88.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxg-r-u4e.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxg-r-u52.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxg-r-u5b.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxg-r-u5c.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxg-r-u62.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxg-r-u63.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxg-r-u65.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxg-r-u68.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxg-r-u75.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxg-r-u76.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxg-r-u82.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxg-r-u89.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxg-r-u8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxg-r-u8b.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxg-r-u90.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxg-r-u97.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxg-r-uff.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u26.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u30.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u4e.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u4f.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u50.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u51.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u52.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u53.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u54.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u56.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u57.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u59.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u5b.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u5c.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u5e.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u5f.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u61.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u62.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u63.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u65.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u66.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u67.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u68.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u6a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u6b.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u6c.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u6f.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u70.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u72.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u73.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u75.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u76.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u7a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u7b.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u7f.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u82.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u88.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u89.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u8b.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u8f.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u90.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u91.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u92.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u96.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u97.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u98.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u99.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-uff.pfb>
-Output written on main.pdf (4 pages, 1084467 bytes).
+Output written on main.pdf (4 pages, 1086650 bytes).
 PDF statistics:
- 605 PDF objects out of 1000 (max. 8388607)
- 356 compressed objects within 4 object streams
- 33 named destinations out of 1000 (max. 500000)
+ 607 PDF objects out of 1000 (max. 8388607)
+ 358 compressed objects within 4 object streams
+ 35 named destinations out of 1000 (max. 500000)
  383 words of extra memory for PDF output out of 10000 (max. 10000000)
 
