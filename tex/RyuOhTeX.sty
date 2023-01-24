@@ -1,0 +1,94 @@
+%%% RyuOhTeX.sty -- Style file to print shogi board.
+%%% This file is part of RyuOhTeX Ver.1.0
+%%%	Copyright (C) 1991, 1995, 1998 Electrotechnical Laboratory, JAPAN
+%%%	Written by K. Handa <handa@etl.go.jp>,
+%%%		   F. Motoyoshi <moto@etl.go.jp>, and
+%%%		   H. Matsubara <matsubar@etl.go.jp>
+%%% and Copyright (C) 2023
+%%%        P.C.(Quisette) Chung <quisette@quisette.me>
+%%%
+%%%	This software is distributed in the hope that it will be useful,
+%%%	but WITHOUT ANY WARRANTY.
+%%%	Permission is granted to any individual or institution to use, copy,
+%%%	modify, or redistribute this software so long as it is not sold for
+%%%	profit, provided that this notice and the original copyright notices
+%%%	are retained.
+%%%
+%%% HISTORY
+%%%	1991.10.9  OhTeX Ver.0.9 (beta)
+%%%	1995.3.8   OhTeX Ver.2.0
+%%%	1995.5.8   OhTeX Ver.2.1 (modified for NFSS)
+%%%	1998.10.8  OhTeX Ver.2.2 (modified for LaTeX2e)
+%%%	1998.10.14 OhTeX Ver.2.3 (bug fix)
+%%% 2023.01.24 RyuOhTeX Ver.1.0 (project restart, changed fonts)
+
+\typeout{RyuOhTeX Ver.1.0 (2023.01.24)}
+
+%%% Usage: \documentstyle[...,RyuOhTeX]{...}
+
+
+%OhTeX display and if statements
+\def\RyuOhTeX{{\rm	R\kern-0.1em \lower0.25ex\hbox{y}\kern-0.1em\hbox{u}\kern-.1em O\kern-.05em\lower.3ex\hbox{h}\kern-.2em\TeX }}
+\def\OhTeX{{\rm	O\kern-.05em\lower.3ex\hbox{h}\kern-.2em\TeX }}
+
+\newif\ifAlphabetOrdinate
+
+\def\AlphabetOrdinate{\AlphabetOrdinatetrue}
+\def\KanjiOrdinate{\AlphabetOrdinatefalse}
+\def\KanjiStyle{\AlphabetOrdinatefalse\ChessStylefalse}
+
+%definitions of variables
+
+\newcount\x
+\newcount\y
+\newcount\z
+\newcount\w
+\newcount\h
+\newcount\cx
+\newcount\cxx
+\newcount\cy
+\newcount\cyy
+\newcount\ch
+\newcount\chh
+\newcount\cw
+\newcount\cww
+\newcount\cmochi
+\newcount\cmochii
+\newcount\cmochix
+\newcount\cmochiy
+\newcount\cmochixx
+\newcount\cmochiyy
+\newcount\cmochiybase
+\newcount\cmochiyybase
+\newdimen\thickaxis
+\newdimen\thinaxis
+
+%fonts [TODO]
+
+\input{./tex/fonts.sty}
+
+
+% Definitions of komas and images
+\input{tex/komaji.sty}
+
+
+% Kifu commands
+\input{tex/kifu.sty}
+
+% bannmenn (Shogi board) display
+\input{tex/bannmenn.sty}
+
+% default (game init) piece display
+
+\def\komainit{
+\koma11\Ky\koma21\Ke\koma31\Gi\koma41\Ki\koma51\Ou\koma61\Ki\koma71\Gi\koma81\Ke\koma91\Ky
+\koma22\Ka\koma82\Hi
+\koma13\Fu\koma23\Fu\koma33\Fu\koma43\Fu\koma53\Fu\koma63\Fu\koma73\Fu\koma83\Fu\koma93\Fu
+\koma19\KY\koma29\KE\koma39\GI\koma49\KI\koma59\GY\koma69\KI\koma79\GI\koma89\KE\koma99\KY
+\koma28\HI\koma88\KA
+\koma17\FU\koma27\FU\koma37\FU\koma47\FU\koma57\FU\koma67\FU\koma77\FU\koma87\FU\koma97\FU
+}
+\let\hirate=\komainit
+
+
+%% Users can customize their default piece, such as kakuochi or nimaiochi.

@@ -1,0 +1,59 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% FONT
+%%%    Since the old metafont is not to be used,
+%%%    the code here should be refined.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Although the original \magstep can only handle up to
+%% scale5, OhTeX uses up to scale7.  So we redefined it
+%% here.
+\@ifundefined{@addfontinfo}{
+    \@ifundefined{DeclareFontFamily}{
+
+    % \def\psh{\family\shdefault\selectfont}
+    % \def\shsize#1{\size{#1}{#1}}
+    %% \sh is used to change the current font to shogi font.
+    % \def\sh{\protect\psh}
+    %% The maximum size provided by the original LaTeX is
+    %% \Huge.  But OhTeX uses the larger one.
+    \def\HUGE{\@setsize\HUGE{48}\xxxvipt\@xxxvipt}
+    }{
+
+    % \DeclareFontFamily{OT1}{sh}{}
+
+    %% \sh is used to change the current font to shogi font.
+
+    \def\shsize#1{\fontsize{#1}{#1}}
+
+    %% The maximum size provided by the original LaTeX is
+    %% \Huge.  But OhTeX uses the larger one.
+
+    % \def\@xxxvipt{35.83}
+    \def\HUGE{\@setsize\HUGE{48}\xxxvipt\@xxxvipt}
+    }}{
+    %% Font definitions from \fivsh to \thsxsh.
+
+    % \@addfontinfo\@vpt{\def\psh{\fivsh}}
+    % \@addfontinfo\@vipt{\def\psh{\sixsh}}
+    % \@addfontinfo\@viipt{\def\psh{\sevsh}}
+    % \@addfontinfo\@viiipt{\def\psh{\egtsh}}
+    % \@addfontinfo\@ixpt{\def\psh{\ninsh}}
+    % \@addfontinfo\@xpt{\def\psh{\tensh}}
+    % \@addfontinfo\@xipt{\def\psh{\elvsh}}
+    % \@addfontinfo\@xiipt{\def\psh{\twlsh}}
+    % \@addfontinfo\@xivpt{\def\psh{\frtsh}}
+    % \@addfontinfo\@xviipt{\def\psh{\svtsh}}
+    % \@addfontinfo\@xxpt{\def\psh{\twtysh}}
+    % \@addfontinfo\@xxvpt{\def\psh{\twfvsh}}
+    % \def\xxxvipt{}
+    % \def\@xxxvipt{}
+    % \@addfontinfo\@xxxvipt{\def\psh{\thsxsh}}
+    %% \sh is used to change the current font to shogi font.
+    % \def\sh{\protect\psh}
+    % \def\shsize#1{\csname @\romannumeral#1\endcsname}
+    %% The maximum size provided by the original LaTeX is
+    %% \Huge.  But OhTeX uses the larger one.
+    \def\HUGE{\@setsize\HUGE{48}\xxxvipt\@xxxvipt}
+    }
+
+    \let\giant=\HUGE		% for backward compatibility

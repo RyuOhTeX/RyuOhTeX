@@ -1,0 +1,31 @@
+
+%% Example: \siro23{\KI} \kuro44{\HI\da}
+
+
+\def\kifuhead{\ \ }
+\def\kifutail{}
+
+% \def\siro#1#2#3{\IsInt{#1}{\IsInt{#2}{\@siro#1#2#3}{\@siro#1}}{\@siro#1}}
+
+% \def\@siro#1#2#3{\kifuhead\sirokoma\num{#1}\jnum{#2}{#3}\kifutail}
+% \def\@kuro#1#2#3{\kifuhead\kurokoma\num{#1}\jnum{#2}{#3}\kifutail}
+% \def\@Siro#1{\kifuhead\sirokoma{#1}\kifutail}
+% \def\@Kuro#1{\kifuhead\kurokoma{#1}\kifutail}
+
+\def\siro#1#2#3{\kifuhead\sirokoma\num{\ifx#1 0\else#1\fi}\jnum{\ifx#2 0\else#2\fi}{#3}\kifutail }
+\def\kuro#1#2#3{\kifuhead\kurokoma\num{\ifx#1 0\else#1\fi}\jnum{\ifx#2 0\else#2\fi}{#3}\kifutail }
+
+\newcount\mvcount\mvcount=1
+\def\mv{\@ifnextchar ,{\mvvv}{\mvv}}
+\def\mvv#1,{\global\mvcount=#1\mvvv,}
+\def\mvvv,{{\hspace{0.5em}\bf\the\mvcount.\kern0.2em}\global\advance\mvcount1\mvx}
+\def\mvx{\@ifnextchar ,{...\mvxxx\@gobble}{\mvxx}}
+\def\mvxx#1,{{\tt#1}\mvxxx}
+\def\mvxxx{\@ifnextchar .{\@gobble}{\mvxxxx}}
+\def\mvxxxx#1.{{\kern0.2em\tt#1}}
+
+\def\kifu{\@ifnextchar [{\@kifu}{\@kifu[1]}}
+\def\@kifu[#1]{\global\mvcount=#1\begin{tabular}{llllllll}}
+\def\endkifu{\end{tabular}}
+\let\score=\kifu
+\let\endscore=\endkifu

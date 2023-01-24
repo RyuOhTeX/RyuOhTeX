@@ -1,0 +1,144 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Definition of characters in shogi font
+%%%     Convention of namings:
+%%%	  XXXX and xxxx are for normal characters.
+%%%       Xxxx are for upside-down characters of the
+%%%       corresponding XXXX or xxxx.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\def\mochi{{持}}
+\def\Mochi{\rev{持}}
+\def\goma{{駒}}
+\def\Goma{\rev{駒}}
+\def\na{{な}}
+\def\Na{\rev{な}}
+\def\si{{し}}
+\def\Si{{\rev{し}}}
+
+%% \symbol{48} through \symbol{67} are for arabic numbers.
+%% Example: \num2 => arabic number two
+%%          \Num2 => upside down of arabic number two.
+\def\num#1{\w=#1\advance\w by 0\mbox{{\ifcase \w \or １\or２\or３\or４\or５\or６\or７\or８\or９\fi}}}
+\def\Num#1{\w=#1\advance\w by 0 \rev{{\ifcase \w \or１\or２\or ３\or４\or５\or６\or７\or８\or９\fi}}}
+
+%% \symbol{68} through \symbol{77} are for chinese numbers.
+%% Example: \jnum2 => chinese number two
+\def\jnum#1{\w=#1%
+	\ifAlphabetOrdinate
+		\advance\w by 96\mbox{\tt\char\w}%
+	\else
+		\advance\w by -1 \mbox{{\ifcase \w 一\or二\or三\or四\or五\or六\or七\or八\or九\fi}}%
+	\fi}
+
+% Shogi Koma Displays
+
+\def\rev#1{\rotatebox[origin=c]{180}{#1}}
+\def\monjika{
+\def\OU{王} \def\Ou{\rev{王}}
+\def\GY{玉} \def\Gy{\rev{玉}}
+\def\HI{飛} \def\Hi{\rev{飛}}
+\def\KA{角} \def\Ka{\rev{角}}
+\def\KI{金} \def\Ki{\rev{金}}
+\def\GI{銀} \def\Gi{\rev{銀}}
+\def\KE{桂} \def\Ke{\rev{桂}}
+\def\KY{香} \def\Ky{\rev{香}}
+\def\FU{步} \def\Fu{\rev{步}}
+\def\RY{龍} \def\Ry{\rev{龍}}
+\def\UM{馬} \def\Um{\rev{馬}}
+\def\NG{全} \def\Ng{\rev{全}}
+\def\NK{圭} \def\Nk{\rev{圭}}
+\def\NY{杏} \def\Ny{\rev{杏}}
+\def\TO{と} \def\To{\rev{と}}
+}
+\monjika
+% Shogi Koma Graphic Displays
+
+% \def\mochigoma{\@ifnextchar [ {\@mochigoma}{\@mochigoma[1]}}
+
+\def\komapath{Portella\_2moji} % Customizable shogi koma graphics path
+%% options: ryoko, Portella, Portella\_2moji
+
+\def\graphicsize{\ifcsname\komasize \komasize \endcsname \else \f@size \fi pt}
+\def\GOU{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/OU.png}}}
+\def\GFU{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/FU.png}}}
+\def\GKY{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/KY.png}}}
+\def\GKE{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/KE.png}}}
+\def\GGI{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/GI.png}}}
+\def\GKI{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/KI.png}}}
+\def\GGY{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/GY.png}}}
+\def\GHI{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/HI.png}}}
+\def\GKA{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/KA.png}}}
+\def\GNY{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/NY.png}}}
+\def\GNK{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/NK.png}}}
+\def\GNG{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/NG.png}}}
+\def\GRY{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/RY.png}}}
+\def\GUM{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/UM.png}}}
+\def\GTO{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/TO.png}}}
+
+\def\GOu{\rev{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/OU.png}}}}
+\def\GFu{\rev{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/FU.png}}}}
+\def\GKy{\rev{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/KY.png}}}}
+\def\GKe{\rev{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/KE.png}}}}
+\def\GGi{\rev{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/GI.png}}}}
+\def\GKi{\rev{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/KI.png}}}}
+\def\GGy{\rev{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/GY.png}}}}
+\def\GHi{\rev{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/HI.png}}}}
+\def\GKa{\rev{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/KA.png}}}}
+\def\GNy{\rev{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/NY.png}}}}
+\def\GNk{\rev{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/NK.png}}}}
+\def\GNg{\rev{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/NG.png}}}}
+\def\GRy{\rev{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/RY.png}}}}
+\def\GUm{\rev{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/UM.png}}}}
+\def\GTo{\rev{\lower\shiftsize\hbox{\includegraphics[width=\graphicsize]{\komapath/TO.png}}}}
+%% graphicalize commands
+\def\gazouka{
+\let\FU\GFU
+\let\KY\GKY
+\let\KE\GKE
+\let\GI\GGI
+\let\KI\GKI
+\let\OU\GOU
+\let\GY\GGY
+\let\HI\GHI
+\let\KA\GKA
+\let\TO\GTO
+\let\NY\GNY
+\let\NK\GNK
+\let\NG\GNG
+\let\RY\GRY
+\let\UM\GUM
+\let\Fu\GFu
+\let\Ky\GKy
+\let\Ke\GKe
+\let\Gi\GGi
+\let\Ki\GKi
+\let\Ou\GOu
+\let\Gy\GGy
+\let\Hi\GHi
+\let\Ka\GKa
+\let\To\GTo
+\let\Ny\GNy
+\let\Nk\GNk
+\let\Ng\GNg
+\let\Ry\GRy
+\let\Um\GUm}
+
+
+%% Kifu notations
+\def\migi{右}
+\def\hidari{左}
+\def\yoru{寄}
+\def\iku{行}
+\def\choku{直}
+\def\hiku{引}
+\def\agaru{上}
+\def\ai{合}
+\def\utsu{打}
+\def\fu{不}
+\def\dou{同}
+\def\naru{成}
+%% Shogi White and Black Komas (Used to indicate sente and gote.)
+\def\sirokoma{☖} \def\Sirokoma{\rev{☖}}
+\def\kurokoma{☗} \def\Kurokoma{\rev{☗}}
