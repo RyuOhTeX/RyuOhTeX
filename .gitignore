@@ -6,3 +6,5 @@ main.fdb_latexmk
 main.synctex.gz
 
 
+main.out
+main.toc
