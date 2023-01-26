@@ -1,0 +1,35 @@
+\section{棋譜生成}
+
+於本套件中，使用者可用指令快速撰寫棋譜。指令如下表：
+\begin{table}[h]
+    \centering
+    \begin{tabular}{c|c}
+        文字 & 指令 \\
+        \hline
+        \naru & \verb|\naru|\\
+        \narazu & \verb|\narazu|\\
+        \migi & \verb|\migi|\\
+        \hidari & \verb|\hidari|\\
+        \yoru & \verb|\yoru|\\
+        \iku & \verb|\iku|\\
+        \choku & \verb|\choku|\\
+        \hiku & \verb|\hiku|\\
+        \agaru & \verb|\agaru|\\
+        \ai & \verb|\ai|\\
+        \utsu & \verb|\utsu|\\
+        \dou & \verb|\dou|\\
+        \narikyo & \verb|\narikyo|\\
+        \narikei & \verb|\narikei|\\
+        \narigin & \verb|\narigin|\\
+
+    \end{tabular}
+    \caption{棋譜漢字指令}
+    \label{tab:my_label}
+\end{table}\\
+使用者可用\verb|\kuro<筋><段><棋駒>| 以及\verb|\siro<筋><段><棋駒>|顯示棋譜。\\
+對於非\verb|<筋><段>|類型的棋譜，請使用\verb|\Siro<棋駒指示詞><棋駒>|。\\
+以下爲範例：\\
+\kuro76\FU \siro34\FU \kuro88\KA\naru \Siro\dou\GI
+\begin{lstlisting}
+\kuro76\FU \siro34\FU \kuro88\KA\naru \Siro\dou\GI
+\end{lstlisting}

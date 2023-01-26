@@ -47,15 +47,17 @@
 \def\FU{步} \def\Fu{\rev{步}}
 \def\RY{龍} \def\Ry{\rev{龍}}
 \def\UM{馬} \def\Um{\rev{馬}}
-\def\NK{\hbox{\lower-1.0ex\hbox{\scalebox{1.0}[0.5]{成}}\kern-1.85em\lower0.3ex\hbox{\ \ \scalebox{1.0}[0.5]{桂}}}}
+
+\def\NK{\hbox{\lower-1.0ex\hbox{\scalebox{1.0}[0.5]{成}}\kern-1em\lower0.1ex\hbox{\scalebox{1.0}[0.5]{桂}}}}
 \def\Nk{\rev{\NK}}
-\def\NG{\hbox{\lower-1.0ex\hbox{\scalebox{1.0}[0.5]{成}}\kern-1.85em\lower0.3ex\hbox{\ \ \scalebox{1.0}[0.5]{銀}}}}
+\def\NG{\hbox{\lower-1.0ex\hbox{\scalebox{1.0}[0.5]{成}}\kern-1em\lower0.1ex\hbox{\scalebox{1.0}[0.5]{銀}}}}
 \def\Ng{\rev{\NG}}
-\def\NY{\hbox{\lower-1.0ex\hbox{\scalebox{1.0}[0.5]{成}}\kern-1.85em\lower0.3ex\hbox{\ \ \scalebox{1.0}[0.5]{香}}}}
+\def\NY{\hbox{\lower-1.0ex\hbox{\scalebox{1.0}[0.5]{成}}\kern-1em\lower0.1ex\hbox{\scalebox{1.0}[0.5]{香}}}}
 \def\Ny{\rev{\NY}}
-% \def\NG{全} \def\Ng{\rev{全}}
-% \def\NK{圭} \def\Nk{\rev{圭}}
-%\def\NY{\rev{杏}}
+
+\def\LNG{全} \def\LNg{\rev{全}}
+\def\LNK{圭} \def\LNk{\rev{圭}}
+\def\LNY{杏} \def\LNy{\rev{杏}}
 \def\TO{と} \def\To{\rev{と}}
 }
 \monjika
@@ -113,6 +115,9 @@
 \let\NY\GNY
 \let\NK\GNK
 \let\NG\GNG
+\let\LNY\GNY
+\let\LNK\GNK
+\let\LNG\GNG
 \let\RY\GRY
 \let\UM\GUM
 \let\Fu\GFu
@@ -128,8 +133,12 @@
 \let\Ny\GNy
 \let\Nk\GNk
 \let\Ng\GNg
+\let\LNy\GNy
+\let\LNk\GNk
+\let\LNg\GNg
 \let\Ry\GRy
 \let\Um\GUm
+
 }
 
 
@@ -146,6 +155,10 @@
 \def\fu{不}
 \def\dou{同}
 \def\naru{成}
+\def\narigin{成銀}
+\def\narikyo{成香}
+\def\narikei{成桂}
+\def\narazu{不成}
 %% Shogi White and Black Komas (Used to indicate sente and gote.)
 \def\sirokoma{☖} \def\Sirokoma{\rev{☖}}
 \def\kurokoma{☗} \def\Kurokoma{\rev{☗}}

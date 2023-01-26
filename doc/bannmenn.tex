@@ -1,0 +1,107 @@
+\section{盤面生成}
+
+\subsection{完整盤面}
+\subsubsection{一般文字盤面}
+欲使用整個棋盤的盤面，可輸入\verb|\shogiban{\hirate}|以生成將棋棋盤。若是要生成空棋盤，可使用 \verb|\shogiban{}| 來生成。\\
+\begin{figure}[h]
+  \begin{minipage}[h]{0.5\linewidth}
+    \centering
+    \shogiban{}
+    \caption{空棋盤}
+    \label{fig:side:a}
+  \end{minipage}%
+  \begin{minipage}[h]{0.5\linewidth}
+    \centering
+    \shogiban{\hirate}
+    \caption{初始盤面}
+    \label{fig:side:b}
+  \end{minipage}
+\end{figure}\\
+\subsubsection{棋駒爲圖片的盤面}
+
+使用者可使用\verb|\shogiban{\gazouka <棋駒位置>}| 以用棋駒圖像顯示盤面，且可用\verb|\def\komapath{<棋駒圖片位置>}|指定棋駒圖片的路徑。
+棋駒圖片的命名方式可參照本資料夾目錄。
+\begin{figure}[h]
+  \begin{minipage}[h]{0.5\linewidth}
+    \centering
+    
+  \shogiban{\gazouka
+\koma11\Ky \koma12\Gy \koma14\Fu \koma17\FU \koma19\KY
+\koma23\Fu \koma27\Ki \koma32\NG \koma34\FU \koma45\KE
+\koma51\Ki \koma53\FU \koma54\Fu \koma58\Ry \koma61\Hi
+\koma67\KI \koma74\Fu \koma76\FU \koma77\GI \koma79\OU
+\koma81\Ke \koma84\Fu \koma87\FU \koma89\KE \koma91\Ky
+\koma93\Fu \koma97\FU \koma99\KY \mochigoma[2]\KA
+\mochigoma\KI \mochigoma[2]\GI \mochigoma\Ke \mochigoma[6]\Fu
+}
+    \caption{使用棋駒圖片顯示的棋盤}
+    \label{fig:side:a}
+  \end{minipage}%
+  \begin{minipage}[h]{0.5\linewidth}
+    \centering
+    \def\komapath{Portella}
+  \gazouka
+  \shogiban{
+\koma11\Ky \koma12\Gy \koma14\Fu \koma17\FU \koma19\KY
+\koma23\Fu \koma27\Ki \koma32\NG \koma34\FU \koma45\KE
+\koma51\Ki \koma53\FU \koma54\Fu \koma58\Ry \koma61\Hi
+\koma67\KI \koma74\Fu \koma76\FU \koma77\GI \koma79\OU
+\koma81\Ke \koma84\Fu \koma87\FU \koma89\KE \koma91\Ky
+\koma93\Fu \koma97\FU \koma99\KY \mochigoma[2]\KA
+\mochigoma\KI \mochigoma[2]\GI \mochigoma\Ke \mochigoma[6]\Fu
+}
+    \caption{自定義棋駒圖片之棋盤}
+    \label{fig:side:b}
+  \end{minipage}
+\end{figure}
+\subsubsection{先後逆盤面}
+若要生成先後逆（後手）的盤面，可使用\verb|\gyakuban{}|生成。\\
+\begin{figure}[h]
+    \centering
+    \gyakuban{
+    \koma88\Ka
+    }
+    \caption{先後逆盤面}
+    \label{fig:my_label}
+\end{figure}\\
+
+\subsection{局部盤面}
+使用指令
+\begin{lstlisting}
+\tsumeshogi{#1}{#2}{#3}{#4}{
+#5
+}
+\end{lstlisting}
+分別指定限制的直行（筋）從第 \#1 筋到第 \#2筋為止；\\
+限制的橫列（段）從第 \#3 段到第 \#4段為止。\\
+\#5 放置所有使用到的棋駒。
+\begin{lstlisting}
+\tsumeshogi{1}{4}{1}{5}{
+    \koma11\Ky \koma13\Fu \koma22\Gy
+    \koma23\KA \koma42\Fu
+    \mochigoma\HI\mochigoma[2]\KI
+}
+\end{lstlisting}
+
+\begin{figure}[h]
+  \begin{minipage}[h]{0.5\linewidth}
+    \centering
+   \tsumeshogi{1}{4}{1}{5}{
+    \koma11\Ky \koma13\Fu \koma22\Gy
+    \koma23\KA \koma42\Fu
+    \mochigoma\HI\mochigoma[2]\KI
+    }
+    \caption{詰將棋範例}
+    \label{fig:side:a}
+  \end{minipage}%
+  \begin{minipage}[h]{0.5\linewidth}
+    \centering
+   \tsumeshogi{1}{5}{6}{9}{
+    \koma16\FU \koma19\KY \koma27\FU \koma28\GY \koma29\KE \koma37\FU \koma47\FU\koma57\FU\koma38 \GI \koma49 \KI \koma58\KI
+    }
+    \caption{美濃圍範例}
+    \label{fig:side:b}
+  \end{minipage}
+\end{figure}
+
+\newpage

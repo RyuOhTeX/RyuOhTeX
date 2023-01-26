@@ -7,6 +7,11 @@
 \def\SHOGIBAN#1{\shogibanmain{1}{9}{1}{9}{2}{0}{#1}{0}}
 \def\GYAKUBAN#1{\shogibanmain{1}{9}{1}{9}{2}{0}{#1}{1}}
 
+\def\SNK{\hbox{\lower-1.0ex\hbox{\scalebox{1.0}[0.5]{成}}\kern-1.85em\lower0.3ex\hbox{\ \ \scalebox{1.0}[0.5]{桂}}}}
+
+\def\SNG{\hbox{\lower-1.0ex\hbox{\scalebox{1.0}[0.5]{成}}\kern-1.85em\lower0.3ex\hbox{\ \ \scalebox{1.0}[0.5]{銀}}}}
+
+\def\SNY{\hbox{\lower-1.0ex\hbox{\scalebox{1.0}[0.5]{成}}\kern-1.85em\lower0.3ex\hbox{\ \ \scalebox{1.0}[0.5]{香}}}}
 \def\tsumeshogi#1#2#3#4#5{\shogibanmain{#1}{#2}{#3}{#4}{0}{1}{#5}{0}}
 
 \def\Tsumeshogi#1#2#3#4#5{\shogibanmain{#1}{#2}{#3}{#4}{1}{1}{#5}{0}}
@@ -14,6 +19,12 @@
 \def\TSUMESHOGI#1#2#3#4#5{\shogibanmain{#1}{#2}{#3}{#4}{2}{1}{#5}{0}}
 
 \newcommand{\shogibanmain}[8]{
+%% NG NK NY syuusei
+\ifx  \GNG \NG
+\relax
+\else
+\let\NG\SNG \let\NY\SNY \let\NK\SNK
+\fi
 %% 筋#1から#2、段#3から#4の将棋盤を作る
 %% 原点 (0,0): 桝目９九の左下座標
 %% (\cx,\cy): 桝目#2#4の左下座標, \cxx=\cx-10, \cyy=\cy-10
@@ -84,6 +95,7 @@
 \put(0,0){\line(0,1){0}}
 %% 座標表示
 \shsize{\axissize}
+
 {
 \advance\cx by 25
 \ifnum#4<9
@@ -96,7 +108,12 @@
 \z=#2 \advance\z by 1
 \loop\ifnum\z>#1
   \advance\z by -1
-  \put(\cx,\cy){\makebox[0mm]{\num\z}}
+  \foo=\z
+  \ifnum#8=1
+  \multiply\foo by -1
+  \advance\foo by 10
+  \fi
+  \put(\cx,\cy){\makebox[0mm]{\num\foo}}
   \advance\cx by 50
 \repeat
 }{
@@ -111,10 +128,16 @@
 \z=#4 \advance\z by 1
 \loop\ifnum\z>#3
   \advance\z by -1
-  \put(\cx,\cy){\makebox[0mm]{\jnum\z}}
+  \foo=\z
+  \ifnum#8=1
+  \multiply\foo by -1
+  \advance\foo by 10
+  \fi
+  \put(\cx,\cy){\makebox[0mm]{\jnum\foo}}
   \advance\cy by 50
 \repeat
 }
+
 %% 「持駒」表示
 \shsize{\mochigomasize}
 \cmochix=\cx \advance\cmochix by\cw \advance\cmochix by 40
@@ -166,6 +189,12 @@
 \cmochiybase=\cmochiy \cmochiyybase=\cmochiyy
 \cmochi=0 \cmochii=0
 %% 駒配置と持ち駒表示
+%% gyakuban coordiate transform
+\ifnum#8=0
+\def\koma{\@koma}
+\else
+\def\koma{\gyakukoma}
+\fi
 #7
 %% 「なし」表示
 \shsize{\mochigomasize}
@@ -180,8 +209,16 @@
   \put(\cmochixx,\cmochiyy){\makebox[0mm]{\Si}}
 \fi\fi
 \end{picture}}
-
-\def\koma#1#2#3{
+\def\gyakukoma#1#2#3{
+    \newcount\gx
+    \gx=10
+    \newcount\gy
+    \gy=10
+    \advance \gx by -#1
+    \advance \gy by -#2
+    \@koma\gx\gy#3
+}
+\def\@koma#1#2#3{
 	\shsize{\komasize}
 	\x=9 \advance\x by -#1 \multiply\x by 50 \advance\x by 25
 	\y=9 \advance\y by -#2 \multiply\y by 50 \advance\y by 10
