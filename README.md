@@ -1,6 +1,6 @@
 # RyuOhTeX LaTeX package
 ## Quick Start
-Please open [Overleaf website](https://overleaf.com) and import `RyuOhTeX Template.zip` to the project, and you're good to go!
+Please download `RyuOhTeX Template.zip` to your computer and open LaTeX compiler to compile, or browse to [Overleaf website](https://overleaf.com) and import `RyuOhTeX Template.zip` to the project, and you're good to go!
 registrations may be required if you do not have an Overleaf account.
 ## Include
 
