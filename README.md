@@ -1,6 +1,8 @@
 # RyuOhTeX LaTeX package
-
-## Include 
+## Quick Start
+Please open [Overleaf website](https://overleaf.com) and import `RyuOhTeX Template.zip` to the project, and you're good to go!
+registrations may be required if you do not have an Overleaf account.
+## Include
 
 ```tex
 \usepackage{RyuOhTeX}
@@ -23,7 +25,7 @@
 Please be noted that:
 
 * different pieces should be declared separately.
-* An upright piece command represents that this piece is captured by sente (black side). 
+* An upright piece command represents that this piece is captured by sente (black side).
 
 ### Shogi Piece Commands
 
@@ -31,7 +33,7 @@ All Shogi Piece commands are named after a "CSA" way, which is a notation method
 
 The general idea for naming piece is listed below:
 
-* All pieces is named in CSA notation method. 
+* All pieces is named in CSA notation method.
 * For ally (upright, black side) pieces, enter the command ALL CAPITALIZED. (e.g. `\FU, \OU ` )
 * For opponent (reverted, white side) pieces, only the second character of the command is in lowercase. (e.g. `\Ka, \Ry ` )
 
@@ -77,5 +79,5 @@ For black pieces, change the `\siro` and `\Siro` to `\Kuro `and `\Kuro`.
 \gyakuban{<shogi pieces>}
 ```
 
-Please be noted that the coordinate system has been reverted in this environment. 
+Please be noted that the coordinate system has been reverted in this environment.
 
