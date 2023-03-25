@@ -1,7 +1,14 @@
 # RyuOhTeX LaTeX package
 ## Quick Start
-Please download `RyuOhTeX Template.zip` to your computer and open LaTeX compiler to compile, or browse to [Overleaf website](https://overleaf.com) and import `RyuOhTeX Template.zip` to the project, and you're good to go!  
-registrations may be required if you do not have an Overleaf account.
+
+### Good News!
+This version of RyuOhTeX template has been uploaded to Overleaf Template library!  
+Please refer to the link below and use Overleaf.com to reduce your setup time on your Shogi documentation using RyuOhTeX.  
+[Overleaf Template](https://www.overleaf.com/latex/templates/ryuohtex-template/gptxgvpvncms)  
+Please be noted that registrations may be required if you do not have an Overleaf account.
+### Legacy way
+ Please download `RyuOhTeX Template.zip` to your computer and open your LaTeX compiler (or IDE) to compile the whole document, and you're good to go!  
+
 ## Include
 
 ```tex
