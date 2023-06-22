@@ -1,24 +1,26 @@
 
 
-\def\shogiban#1{\shogibanmain{1}{9}{1}{9}{0}{0}{#1}{0}}
-\def\gyakuban#1{\shogibanmain{1}{9}{1}{9}{0}{0}{#1}{1}}
-\def\Shogiban#1{\shogibanmain{1}{9}{1}{9}{1}{0}{#1}{0}}
-\def\Gyakuban#1{\shogibanmain{1}{9}{1}{9}{1}{0}{#1}{1}}
-\def\SHOGIBAN#1{\shogibanmain{1}{9}{1}{9}{2}{0}{#1}{0}}
-\def\GYAKUBAN#1{\shogibanmain{1}{9}{1}{9}{2}{0}{#1}{1}}
+\def\shogiban#1{\shogibanmain{1}{9}{1}{9}{0}{0}{#1}{0}{1}}
+\def\gyakuban#1{\shogibanmain{1}{9}{1}{9}{0}{0}{#1}{1}{1}}
+\def\Shogiban#1{\shogibanmain{1}{9}{1}{9}{1}{0}{#1}{0}{1}}
+\def\Gyakuban#1{\shogibanmain{1}{9}{1}{9}{1}{0}{#1}{1}{1}}
+\def\SHOGIBAN#1{\shogibanmain{1}{9}{1}{9}{2}{0}{#1}{0}{1}}
+\def\GYAKUBAN#1{\shogibanmain{1}{9}{1}{9}{2}{0}{#1}{1}{1}}
 
 \def\SNK{\hbox{\lower-1.0ex\hbox{\scalebox{1.0}[0.5]{成}}\kern-1.85em\lower0.3ex\hbox{\ \ \scalebox{1.0}[0.5]{桂}}}}
 
 \def\SNG{\hbox{\lower-1.0ex\hbox{\scalebox{1.0}[0.5]{成}}\kern-1.85em\lower0.3ex\hbox{\ \ \scalebox{1.0}[0.5]{銀}}}}
 
 \def\SNY{\hbox{\lower-1.0ex\hbox{\scalebox{1.0}[0.5]{成}}\kern-1.85em\lower0.3ex\hbox{\ \ \scalebox{1.0}[0.5]{香}}}}
-\def\tsumeshogi#1#2#3#4#5{\shogibanmain{#1}{#2}{#3}{#4}{0}{1}{#5}{0}}
+\def\tsumeshogi#1#2#3#4#5{\shogibanmain{#1}{#2}{#3}{#4}{0}{1}{#5}{0}{1}}
 
-\def\Tsumeshogi#1#2#3#4#5{\shogibanmain{#1}{#2}{#3}{#4}{1}{1}{#5}{0}}
+\def\Tsumeshogi#1#2#3#4#5{\shogibanmain{#1}{#2}{#3}{#4}{1}{1}{#5}{0}{1}}
 
-\def\TSUMESHOGI#1#2#3#4#5{\shogibanmain{#1}{#2}{#3}{#4}{2}{1}{#5}{0}}
+\def\TSUMESHOGI#1#2#3#4#5{\shogibanmain{#1}{#2}{#3}{#4}{2}{1}{#5}{0}{1}}
 
-\newcommand{\shogibanmain}[8]{
+\def\kanndann#1#2#3#4#5{\shogibanmain{#1}{#2}{#3}{#4}{0}{1}{#5}{0}{0}}
+
+\newcommand{\shogibanmain}[9]{
 %% NG NK NY syuusei
 \ifx  \GNG \NG
 \relax
@@ -36,6 +38,7 @@
 %% #6: 0/全盤面 1/詰め将棋盤面
 %% #7: 駒位置、持ち駒
 %% #8: senngogyaku (kifu notation  still same , need to fix )
+%% #9: if there needs coordinate
 
 \ifcase#5			% #5==0/小
   \unitlength=0.1mm
@@ -94,6 +97,8 @@
 \repeat}
 \put(0,0){\line(0,1){0}}
 %% 座標表示
+
+\ifnum#9=1
 \shsize{\axissize}
 
 {
@@ -137,154 +142,163 @@
   \advance\cy by 50
 \repeat
 }
-
+\fi
 %% 「持駒」表示
-\shsize{\mochigomasize}
-\cmochix=\cx \advance\cmochix by\cw \advance\cmochix by 40
-\cmochixx=\cx \advance\cmochixx by -30
-\ifnum#2<9
-  \advance\cmochix by 40
-\else\ifnum#1=1
-  \advance\cmochix by 40
-\else
-  \advance\cmochixx by -40
-\fi\fi
-\cmochiy=\cy \advance\cmochiy by\ch
-\ifnum\ch>400
-  \advance\cmochiy by -50
-\fi
-\ifnum#8=0
-  \put(\cmochix,\cmochiy){\makebox[0mm]{\kurokoma}}
-  \advance\cmochiy by -35
-  \put(\cmochix,\cmochiy){\makebox[0mm]{\mochi}}
-  \advance\cmochiy by -35
-  \put(\cmochix,\cmochiy){\makebox[0mm]{\goma}}
-  \advance\cmochiy by -50
-  \cmochiyy=\cy \advance\cmochiyy by 30
-  \ifnum#6=0
-    \put(\cmochixx,\cmochiyy){\makebox[0mm]{\Sirokoma}}
-    \advance\cmochiyy by 35
-    \put(\cmochixx,\cmochiyy){\makebox[0mm]{\Mochi}}
-    \advance\cmochiyy by 35
-    \put(\cmochixx,\cmochiyy){\makebox[0mm]{\Goma}}
-    \advance\cmochiyy by 50
+\ifnum#9=1
+  \shsize{\mochigomasize}
+  \cmochix=\cx \advance\cmochix by\cw \advance\cmochix by 40
+  \cmochixx=\cx \advance\cmochixx by -30
+  \ifnum#2<9
+    \advance\cmochix by 40
+  \else\ifnum#1=1
+    \advance\cmochix by 40
+  \else
+    \advance\cmochixx by -40
+  \fi\fi
+  \cmochiy=\cy \advance\cmochiy by\ch
+  \ifnum\ch>400
+    \advance\cmochiy by -50
   \fi
-\else % reversed
-  \put(\cmochix,\cmochiy){\makebox[0mm]{\sirokoma}}
-  \advance\cmochiy by -35
-  \put(\cmochix,\cmochiy){\makebox[0mm]{\mochi}}
-  \advance\cmochiy by -35
-  \put(\cmochix,\cmochiy){\makebox[0mm]{\goma}}
-  \advance\cmochiy by -50
-  \cmochiyy=\cy \advance\cmochiyy by 30
-  \ifnum#6=0
-    \put(\cmochixx,\cmochiyy){\makebox[0mm]{\Kurokoma}}
-    \advance\cmochiyy by 35
-    \put(\cmochixx,\cmochiyy){\makebox[0mm]{\Mochi}}
-    \advance\cmochiyy by 35
-    \put(\cmochixx,\cmochiyy){\makebox[0mm]{\Goma}}
-    \advance\cmochiyy by 50
+  \ifnum#8=0
+    \put(\cmochix,\cmochiy){\makebox[0mm]{\kurokoma}}
+    \advance\cmochiy by -35
+    \put(\cmochix,\cmochiy){\makebox[0mm]{\mochi}}
+    \advance\cmochiy by -35
+    \put(\cmochix,\cmochiy){\makebox[0mm]{\goma}}
+    \advance\cmochiy by -50
+    \cmochiyy=\cy \advance\cmochiyy by 30
+    \ifnum#6=0
+      \put(\cmochixx,\cmochiyy){\makebox[0mm]{\Sirokoma}}
+      \advance\cmochiyy by 35
+      \put(\cmochixx,\cmochiyy){\makebox[0mm]{\Mochi}}
+      \advance\cmochiyy by 35
+      \put(\cmochixx,\cmochiyy){\makebox[0mm]{\Goma}}
+      \advance\cmochiyy by 50
     \fi
-\fi
-\cmochiybase=\cmochiy \cmochiyybase=\cmochiyy
-\cmochi=0 \cmochii=0
-%% 駒配置と持ち駒表示
-%% gyakuban coordiate transform
-\ifnum#8=0
-\def\koma{\@koma}
-\else
-\def\koma{\gyakukoma}
-\fi
-#7
-%% 「なし」表示
-\shsize{\mochigomasize}
-\ifnum\cmochi=0
-  \put(\cmochix,\cmochiy){\makebox[0mm]{\na}}
-  \advance\cmochiy by -40
-  \put(\cmochix,\cmochiy){\makebox[0mm]{\si}}
-\fi
-\ifnum#6=0\ifnum\cmochii=0
-  \put(\cmochixx,\cmochiyy){\makebox[0mm]{\Na}}
-  \advance\cmochiyy by 40
-  \put(\cmochixx,\cmochiyy){\makebox[0mm]{\Si}}
-\fi\fi
-\end{picture}}
-\def\gyakukoma#1#2#3{
-    \newcount\gx
-    \gx=10
-    \newcount\gy
-    \gy=10
-    \advance \gx by -#1
-    \advance \gy by -#2
-    \@koma\gx\gy#3
-}
-\def\@koma#1#2#3{
-	\shsize{\komasize}
-	\x=9 \advance\x by -#1 \multiply\x by 50 \advance\x by 25
-	\y=9 \advance\y by -#2 \multiply\y by 50 \advance\y by 10
-	\put(\x,\y){\makebox[0mm]{#3}}
-}
-
-\def\mochigoma{\@ifnextchar [ {\@mochigoma}{\@mochigoma[1]}}
-
-\def\@mochigoma[#1]#2{
-\shsize{\komasize}
-{
-\global\z=1  %% Boolean indicating if koma is gote's mochigoma
-%% List of commands should parse into gote's komadai
-\ifx#2\Hi\global\z=0 \else
-\ifx#2\Ka\global\z=0 \else
-\ifx#2\Ki\global\z=0 \else
-\ifx#2\Gi\global\z=0 \else
-\ifx#2\Ke\global\z=0 \else
-\ifx#2\Ky\global\z=0 \else
-\ifx#2\Fu\global\z=0 \else
-\ifx#2\GHi\global\z=0 \else
-\ifx#2\GKa\global\z=0 \else
-\ifx#2\GKi\global\z=0 \else
-\ifx#2\GGi\global\z=0 \else
-\ifx#2\GKe\global\z=0 \else
-\ifx#2\GKy\global\z=0 \else
-\ifx#2\GFu\global\z=0
-\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi
-}
-\ifnum\z=0\relax %% If Gote
-  \advance\cmochii by 1
-  \w=\cy \advance\w by\ch
-  \ifnum\cmochiyy>\w
-    \cmochiyy=\cmochiyybase
-    \advance\cmochixx by -50
+  \else % reversed
+    \put(\cmochix,\cmochiy){\makebox[0mm]{\sirokoma}}
+    \advance\cmochiy by -35
+    \put(\cmochix,\cmochiy){\makebox[0mm]{\mochi}}
+    \advance\cmochiy by -35
+    \put(\cmochix,\cmochiy){\makebox[0mm]{\goma}}
+    \advance\cmochiy by -50
+    \cmochiyy=\cy \advance\cmochiyy by 30
+    \ifnum#6=0
+      \put(\cmochixx,\cmochiyy){\makebox[0mm]{\Kurokoma}}
+      \advance\cmochiyy by 35
+      \put(\cmochixx,\cmochiyy){\makebox[0mm]{\Mochi}}
+      \advance\cmochiyy by 35
+      \put(\cmochixx,\cmochiyy){\makebox[0mm]{\Goma}}
+      \advance\cmochiyy by 50
+      \fi
   \fi
-  \put(\cmochixx,\cmochiyy){\makebox[0mm]{#2}} % put the gote mochigoma word / image
-  \ifnum#1>1 % if there is multiple mochigoma
+  \cmochiybase=\cmochiy \cmochiyybase=\cmochiyy
+  \cmochi=0 \cmochii=0
+
+  \fi
+  %% 駒配置と持ち駒表示
+  %% gyakuban coordiate transform
+
+  \ifnum#8=0
+  \def\koma{\@koma}
+  \else
+  \def\koma{\gyakukoma}
+  \fi
+  #7
+  %% 「なし」表示
+\ifnum#9=1
+  \shsize{\mochigomasize}
+  \ifnum\cmochi=0
+    \put(\cmochix,\cmochiy){\makebox[0mm]{\na}}
+    \advance\cmochiy by -40
+    \put(\cmochix,\cmochiy){\makebox[0mm]{\si}}
+  \fi
+  \ifnum#6=0\ifnum\cmochii=0
+    \put(\cmochixx,\cmochiyy){\makebox[0mm]{\Na}}
     \advance\cmochiyy by 40
-    \shsize{\axissize}
-    \ifnum#1>9{ % if mochigoma number is two digits
-      \y=#1\advance\y-10\relax
-      \put(\cmochixx,\cmochiyy){\makebox[0mm]{\Num\y\Num1}}}
-    \else{
-      \advance\cmochixx by 2
-      \put(\cmochixx,\cmochiyy){\makebox[0mm]{\Num#1}}}
-    \fi
-  \fi
-  \advance\cmochiyy by 45
-\else %% Sente
-  \advance\cmochi by 1
-  \ifnum\cmochiy<\cy
-    \cmochiy=\cmochiybase
-    \advance\cmochix by 50
-  \fi
-  \put(\cmochix,\cmochiy){\makebox[0mm]{#2}} % put the mochigoma word / image
-  \ifnum#1>1
-    \advance\cmochiy by -30
-    \shsize{\axissize}
-    \ifnum#1>9{ % if mochigoma number is two digits
-      \y=#1\advance\y-10\relax
-      \put(\cmochix,\cmochiy){\makebox[0mm]{\num1\num\y}}}
-    \else
-      \put(\cmochix,\cmochiy){\makebox[0mm]{\num#1}}
-    \fi
-  \fi
-  \advance\cmochiy by -45
+    \put(\cmochixx,\cmochiyy){\makebox[0mm]{\Si}}
+  \fi\fi
 \fi
-}
+  \end{picture}
+
+  }
+  \def\gyakukoma#1#2#3{
+      \newcount\gx
+      \gx=10
+      \newcount\gy
+      \gy=10
+      \advance \gx by -#1
+      \advance \gy by -#2
+      \@koma\gx\gy#3
+  }
+  \def\@koma#1#2#3{
+    \shsize{\komasize}
+    \x=9 \advance\x by -#1 \multiply\x by 50 \advance\x by 25
+    \y=9 \advance\y by -#2 \multiply\y by 50 \advance\y by 10
+    \put(\x,\y){\makebox[0mm]{#3}}
+  }
+  \def\mochigoma{\@ifnextchar [ {\@mochigoma}{\@mochigoma[1]}}
+
+  \def\@mochigoma[#1]#2{
+
+  \shsize{\komasize}
+  {
+  \global\z=1  %% Boolean indicating if koma is gote's mochigoma
+  %% List of commands should parse into gote's komadai
+  \ifx#2\Hi\global\z=0 \else
+  \ifx#2\Ka\global\z=0 \else
+  \ifx#2\Ki\global\z=0 \else
+  \ifx#2\Gi\global\z=0 \else
+  \ifx#2\Ke\global\z=0 \else
+  \ifx#2\Ky\global\z=0 \else
+  \ifx#2\Fu\global\z=0 \else
+  \ifx#2\GHi\global\z=0 \else
+  \ifx#2\GKa\global\z=0 \else
+  \ifx#2\GKi\global\z=0 \else
+  \ifx#2\GGi\global\z=0 \else
+  \ifx#2\GKe\global\z=0 \else
+  \ifx#2\GKy\global\z=0 \else
+  \ifx#2\GFu\global\z=0
+  \fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi
+  }
+  \ifnum\z=0\relax %% If Gote
+    \advance\cmochii by 1
+    \w=\cy \advance\w by\ch
+    \ifnum\cmochiyy>\w
+      \cmochiyy=\cmochiyybase
+      \advance\cmochixx by -50
+    \fi
+    \put(\cmochixx,\cmochiyy){\makebox[0mm]{#2}} % put the gote mochigoma word / image
+    \ifnum#1>1 % if there is multiple mochigoma
+      \advance\cmochiyy by 40
+      \shsize{\axissize}
+      \ifnum#1>9{ % if mochigoma number is two digits
+        \y=#1\advance\y-10\relax
+        \put(\cmochixx,\cmochiyy){\makebox[0mm]{\Num\y\Num1}}}
+      \else{
+        \advance\cmochixx by 2
+        \put(\cmochixx,\cmochiyy){\makebox[0mm]{\Num#1}}}
+      \fi
+    \fi
+    \advance\cmochiyy by 45
+  \else %% Sente
+    \advance\cmochi by 1
+    \ifnum\cmochiy<\cy
+      \cmochiy=\cmochiybase
+      \advance\cmochix by 50
+    \fi
+    \put(\cmochix,\cmochiy){\makebox[0mm]{#2}} % put the mochigoma word / image
+    \ifnum#1>1
+      \advance\cmochiy by -30
+      \shsize{\axissize}
+      \ifnum#1>9{ % if mochigoma number is two digits
+        \y=#1\advance\y-10\relax
+        \put(\cmochix,\cmochiy){\makebox[0mm]{\num1\num\y}}}
+      \else
+        \put(\cmochix,\cmochiy){\makebox[0mm]{\num#1}}
+      \fi
+    \fi
+    \advance\cmochiy by -45
+  \fi
+  }
+  
